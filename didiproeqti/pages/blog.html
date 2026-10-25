@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Company</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html"><img src="../Logo.png" alt="Logo"></a>
+            </div>
+
+            <div class="header-right">
+                <nav class="navBar desktop-nav">
+                    <ul>
+                        <li><a href="./solutions.html">Solutions</a></li>
+                        <li><a href="./vision.html">Vision</a></li>
+                        <li><a href="./blog.html">Blog</a></li>
+                    </ul>
+                </nav>
+
+                <a href="./getstarted.html" class="get-started">Get Started</a>
+
+                <a href="./login.html" class="login-btn desktop-login">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FF6044" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                    <span>Log in</span>
+                </a>
+
+                <input type="checkbox" id="menu-toggle" hidden>
+
+                <label for="menu-toggle" class="hamburger-btn" aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+
+                <div class="mobile-menu-overlay">
+                    <label for="menu-toggle" class="close-btn" aria-label="Close menu">&times;</label>
+
+                    <div class="mobile-menu-content">
+                        <a href="./login.html" class="login-btn mobile-login">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FF6044" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                            <span>Log in</span>
+                        </a>
+
+                        <nav class="mobile-nav">
+                            <ul>
+                                <li><a href="./solutions.html">Solutions</a></li>
+                                <li><a href="./vision.html">Vision</a></li>
+                                <li><a href="./blog.html">Blog</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+<main>
+<section class="blog-section">
+  <h1 class="blog-main-title">Our Blog</h1>
+
+  <input type="radio" id="tab-all" name="blog-filter" class="blog-filter-radio" checked>
+  <input type="radio" id="tab-content" name="blog-filter" class="blog-filter-radio">
+  <input type="radio" id="tab-marketing" name="blog-filter" class="blog-filter-radio">
+
+  <div class="blog-categories">
+    <label for="tab-all" class="blog-category-tab tab-label-all">All Posts</label>
+    <label for="tab-content" class="blog-category-tab tab-label-content">Content Creation</label>
+    <label for="tab-marketing" class="blog-category-tab tab-label-marketing">Marketing</label>
+  </div>
+
+  <div class="blog-posts-feed">
+    <article class="blog-post-card post-content post-marketing">
+      <div class="blog-post-header">
+        <div class="blog-author-info">
+          <div class="blog-author-avatar">
+            <svg viewBox="0 0 24 24" fill="#8b8b8b" width="100%" height="100%">
+              <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+            </svg>
+          </div>
+          <div class="blog-author-meta">
+            <span class="blog-author-name">Admin</span>
+            <span class="blog-post-date">Jul 23, 2022 · 1 min read</span>
+          </div>
+        </div>
+
+        <div class="blog-more-dropdown">
+          <button class="blog-more-btn" tabindex="0" aria-label="More options">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="#ffffff">
+              <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
+            </svg>
+          </button>
+          <div class="blog-share-menu">
+            <a href="#" class="blog-share-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" class="blog-icon-fill" fill="#ffffff">
+                <path d="M16.9410444,8.39109677 C17.0195644,8.46818967 17.0195644,8.59371274 16.9410444,8.67080564 L11.9026789,13.6176004 C11.7063789,13.8103326 11.3872657,13.8103326 11.1909657,13.6176004 C11.096339,13.5246935 11.0429857,13.3991705 11.0429857,13.2677172 L11.0429857,11.0013834 C7.27402658,11.0013834 4.38690723,12.7339971 2.38263435,16.1972475 C2.27794104,16.3781194 1.99204777,16.3049799 2.0001011,16.0964337 C2.24975438,10.0357454 5.2637137,6.69011101 11.0429857,6.05953059 L11.0429857,3.79418524 C11.0429857,3.52040659 11.268479,3.29999995 11.5463189,3.29999995 C11.6802056,3.29999995 11.8080522,3.35139522 11.9026789,3.44430206 L16.9410444,8.39109677 Z M3.43409745,13.1243046 C5.43837033,11.0576217 7.98624309,10.0139024 11.0434891,10.0139024 L12.0501555,10.0139024 L12.0501555,12.0746551 L15.6600614,8.53035818 L12.0501555,4.98704968 L12.0501555,6.94501178 L11.1542224,7.0418721 C6.94635665,7.50146442 4.39949056,9.49994971 3.43409745,13.1243046 Z"></path>
+              </svg>
+              <span>Share Post</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="blog-post-title">8 Technology Trends That Will Dominate This Year</h2>
+      <p class="blog-post-excerpt"><a class="bloglink" href="./bloglink.html">We've made it quick and convenient for you to manage your blog from anywhere. In this blog post, we'll share the ways you can post to your Wix Blog. Blogging from the Dashboard On the dashboard, you have everything you need to manage your blog in one...</a></p>
+
+      <div class="blog-post-footer">
+        <div class="blog-post-stats">
+          <span>4 views</span>
+          <span>0 comments</span>
+        </div>
+        <div class="blog-like-wrapper">
+          <input type="checkbox" id="like-1" class="blog-like-checkbox">
+          <label for="like-1" class="blog-like-label">
+            <span class="blog-like-count">0</span>
+            <svg viewBox="0 0 19 19" class="blog-heart-icon">
+              <path d="M9.44985848,15.5291774 C9.43911371,15.5362849 9.42782916,15.5449227 9.41715267,15.5553324 L9.44985848,15.5291774 Z M9.44985848,15.5291774 L9.49370677,15.4941118 C9.15422701,15.7147757 10.2318883,15.0314406 10.7297038,14.6971183 C11.5633567,14.1372547 12.3827081,13.5410755 13.1475707,12.9201001 C14.3829188,11.9171478 15.3570936,10.9445466 15.9707237,10.0482572 C16.0768097,9.89330422 16.1713564,9.74160032 16.2509104,9.59910798 C17.0201658,8.17755699 17.2088969,6.78363112 16.7499013,5.65913129 C16.4604017,4.81092573 15.7231445,4.11008901 14.7401472,3.70936139 C13.1379564,3.11266008 11.0475663,3.84092251 9.89976068,5.36430396 L9.50799408,5.8842613 L9.10670536,5.37161711 C7.94954806,3.89335486 6.00516066,3.14638251 4.31830373,3.71958508 C3.36517186,4.00646284 2.65439601,4.72068063 2.23964629,5.77358234 C1.79050315,6.87166888 1.98214559,8.26476279 2.74015555,9.58185512 C2.94777753,9.93163559 3.23221417,10.3090129 3.5869453,10.7089994 C4.17752179,11.3749196 4.94653811,12.0862394 5.85617417,12.8273544 C7.11233096,13.8507929 9.65858244,15.6292133 9.58280954,15.555334 C9.53938013,15.5129899 9.48608859,15.5 9.50042471,15.5 C9.5105974,15.5 9.48275828,15.5074148 9.44985848,15.5291774 Z"></path>
+            </svg>
+          </label>
+        </div>
+      </div>
+    </article>
+
+    <article class="blog-post-card post-marketing">
+      <div class="blog-post-header">
+        <div class="blog-author-info">
+          <div class="blog-author-avatar">
+            <svg viewBox="0 0 24 24" fill="#8b8b8b" width="100%" height="100%">
+              <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+            </svg>
+          </div>
+          <div class="blog-author-meta">
+            <span class="blog-author-name">Admin</span>
+            <span class="blog-post-date">Jul 22, 2022 · 1 min read</span>
+          </div>
+        </div>
+
+        <div class="blog-more-dropdown">
+          <button class="blog-more-btn" tabindex="0" aria-label="More options">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="#ffffff">
+              <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
+            </svg>
+          </button>
+          <div class="blog-share-menu">
+            <a href="#" class="blog-share-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" class="blog-icon-fill" fill="#ffffff">
+                <path d="M16.9410444,8.39109677 C17.0195644,8.46818967 17.0195644,8.59371274 16.9410444,8.67080564 L11.9026789,13.6176004 C11.7063789,13.8103326 11.3872657,13.8103326 11.1909657,13.6176004 C11.096339,13.5246935 11.0429857,13.3991705 11.0429857,13.2677172 L11.0429857,11.0013834 C7.27402658,11.0013834 4.38690723,12.7339971 2.38263435,16.1972475 C2.27794104,16.3781194 1.99204777,16.3049799 2.0001011,16.0964337 C2.24975438,10.0357454 5.2637137,6.69011101 11.0429857,6.05953059 L11.0429857,3.79418524 C11.0429857,3.52040659 11.268479,3.29999995 11.5463189,3.29999995 C11.6802056,3.29999995 11.8080522,3.35139522 11.9026789,3.44430206 L16.9410444,8.39109677 Z M3.43409745,13.1243046 C5.43837033,11.0576217 7.98624309,10.0139024 11.0434891,10.0139024 L12.0501555,10.0139024 L12.0501555,12.0746551 L15.6600614,8.53035818 L12.0501555,4.98704968 L12.0501555,6.94501178 L11.1542224,7.0418721 C6.94635665,7.50146442 4.39949056,9.49994971 3.43409745,13.1243046 Z"></path>
+              </svg>
+              <span>Share Post</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="blog-post-title">Introduction to Data Query Engines</h2>
+      <p class="blog-post-excerpt"><a class="bloglink" href="./bloglink.html">With Wix Blog, you're not only sharing your voice with the world, you can also grow an active online community. To let readers sign up and become members of your site, add a Members Area from Add Apps in the Editor sidebar. What can members do? Members can...</a></p>
+
+      <div class="blog-post-footer">
+        <div class="blog-post-stats">
+          <span>4 views</span>
+          <span>0 comments</span>
+        </div>
+        <div class="blog-like-wrapper">
+          <input type="checkbox" id="like-2" class="blog-like-checkbox">
+          <label for="like-2" class="blog-like-label">
+            <span class="blog-like-count">0</span>
+            <svg viewBox="0 0 19 19" class="blog-heart-icon">
+              <path d="M9.44985848,15.5291774 C9.43911371,15.5362849 9.42782916,15.5449227 9.41715267,15.5553324 L9.44985848,15.5291774 Z M9.44985848,15.5291774 L9.49370677,15.4941118 C9.15422701,15.7147757 10.2318883,15.0314406 10.7297038,14.6971183 C11.5633567,14.1372547 12.3827081,13.5410755 13.1475707,12.9201001 C14.3829188,11.9171478 15.3570936,10.9445466 15.9707237,10.0482572 C16.0768097,9.89330422 16.1713564,9.74160032 16.2509104,9.59910798 C17.0201658,8.17755699 17.2088969,6.78363112 16.7499013,5.65913129 C16.4604017,4.81092573 15.7231445,4.11008901 14.7401472,3.70936139 C13.1379564,3.11266008 11.0475663,3.84092251 9.89976068,5.36430396 L9.50799408,5.8842613 L9.10670536,5.37161711 C7.94954806,3.89335486 6.00516066,3.14638251 4.31830373,3.71958508 C3.36517186,4.00646284 2.65439601,4.72068063 2.23964629,5.77358234 C1.79050315,6.87166888 1.98214559,8.26476279 2.74015555,9.58185512 C2.94777753,9.93163559 3.23221417,10.3090129 3.5869453,10.7089994 C4.17752179,11.3749196 4.94653811,12.0862394 5.85617417,12.8273544 C7.11233096,13.8507929 9.65858244,15.6292133 9.58280954,15.555334 C9.53938013,15.5129899 9.48608859,15.5 9.50042471,15.5 C9.5105974,15.5 9.48275828,15.5074148 9.44985848,15.5291774 Z"></path>
+            </svg>
+          </label>
+        </div>
+      </div>
+    </article>
+
+    <article class="blog-post-card post-content">
+      <div class="blog-post-header">
+        <div class="blog-author-info">
+          <div class="blog-author-avatar">
+            <svg viewBox="0 0 24 24" fill="#8b8b8b" width="100%" height="100%">
+              <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+            </svg>
+          </div>
+          <div class="blog-author-meta">
+            <span class="blog-author-name">Admin</span>
+            <span class="blog-post-date">Jul 21, 2022 · 1 min read</span>
+          </div>
+        </div>
+
+        <div class="blog-more-dropdown">
+          <button class="blog-more-btn" tabindex="0" aria-label="More options">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="#ffffff">
+              <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
+            </svg>
+          </button>
+          <div class="blog-share-menu">
+            <a href="#" class="blog-share-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" class="blog-icon-fill" fill="#ffffff">
+                <path d="M16.9410444,8.39109677 C17.0195644,8.46818967 17.0195644,8.59371274 16.9410444,8.67080564 L11.9026789,13.6176004 C11.7063789,13.8103326 11.3872657,13.8103326 11.1909657,13.6176004 C11.096339,13.5246935 11.0429857,13.3991705 11.0429857,13.2677172 L11.0429857,11.0013834 C7.27402658,11.0013834 4.38690723,12.7339971 2.38263435,16.1972475 C2.27794104,16.3781194 1.99204777,16.3049799 2.0001011,16.0964337 C2.24975438,10.0357454 5.2637137,6.69011101 11.0429857,6.05953059 L11.0429857,3.79418524 C11.0429857,3.52040659 11.268479,3.29999995 11.5463189,3.29999995 C11.6802056,3.29999995 11.8080522,3.35139522 11.9026789,3.44430206 L16.9410444,8.39109677 Z M3.43409745,13.1243046 C5.43837033,11.0576217 7.98624309,10.0139024 11.0434891,10.0139024 L12.0501555,10.0139024 L12.0501555,12.0746551 L15.6600614,8.53035818 L12.0501555,4.98704968 L12.0501555,6.94501178 L11.1542224,7.0418721 C6.94635665,7.50146442 4.39949056,9.49994971 3.43409745,13.1243046 Z"></path>
+              </svg>
+              <span>Share Post</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="blog-post-title">The Online Database Migration Guide</h2>
+      <p class="blog-post-excerpt"><a class="bloglink" href="./blog.html">When it comes to design, the Wix Blog has everything you need to create beautiful posts that will grab your reader's attention. Check out our essential design features. Choose from several beautiful layouts Your blog feed comes with many responsive layouts to...</a></p>
+
+      <div class="blog-post-footer">
+        <div class="blog-post-stats">
+          <span>4 views</span>
+          <span>0 comments</span>
+        </div>
+        <div class="blog-like-wrapper">
+          <input type="checkbox" id="like-3" class="blog-like-checkbox">
+          <label for="like-3" class="blog-like-label">
+            <span class="blog-like-count">0</span>
+            <svg viewBox="0 0 19 19" class="blog-heart-icon">
+              <path d="M9.44985848,15.5291774 C9.43911371,15.5362849 9.42782916,15.5449227 9.41715267,15.5553324 L9.44985848,15.5291774 Z M9.44985848,15.5291774 L9.49370677,15.4941118 C9.15422701,15.7147757 10.2318883,15.0314406 10.7297038,14.6971183 C11.5633567,14.1372547 12.3827081,13.5410755 13.1475707,12.9201001 C14.3829188,11.9171478 15.3570936,10.9445466 15.9707237,10.0482572 C16.0768097,9.89330422 16.1713564,9.74160032 16.2509104,9.59910798 C17.0201658,8.17755699 17.2088969,6.78363112 16.7499013,5.65913129 C16.4604017,4.81092573 15.7231445,4.11008901 14.7401472,3.70936139 C13.1379564,3.11266008 11.0475663,3.84092251 9.89976068,5.36430396 L9.50799408,5.8842613 L9.10670536,5.37161711 C7.94954806,3.89335486 6.00516066,3.14638251 4.31830373,3.71958508 C3.36517186,4.00646284 2.65439601,4.72068063 2.23964629,5.77358234 C1.79050315,6.87166888 1.98214559,8.26476279 2.74015555,9.58185512 C2.94777753,9.93163559 3.23221417,10.3090129 3.5869453,10.7089994 C4.17752179,11.3749196 4.94653811,12.0862394 5.85617417,12.8273544 C7.11233096,13.8507929 9.65858244,15.6292133 9.58280954,15.555334 C9.53938013,15.5129899 9.48608859,15.5 9.50042471,15.5 C9.5105974,15.5 9.48275828,15.5074148 9.44985848,15.5291774 Z"></path>
+            </svg>
+          </label>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+</main>
+
+
+    <footer class="site-footer">
+        <div class="footer-conteier">
+            <div class="footer-marcxena">
+                <div class="footer-brendi">
+                    <a href="#">
+                        <img src="../Logo.png" alt="Vista.to logo" class="footer-logo">
+                    </a>
+                </div>
+                <nav class="footer-nav">
+                    <ul>
+                        <li><a href="./solutions.html">Solutions</a></li>
+                        <li><a href="./vision.html">Vision</a></li>
+                        <li><a href="./blog.html">Blog</a></li>
+                        <li><a href="./privacy.html">Privacy Policy</a></li>
+                        <li><a href="./accessibility.html">Accessibility Statement</a></li>
+                    </ul>
+                </nav>
+                <a href="./getstarted.html" class="get-started footer-btn">Get Started</a>
+
+                <div class="footer-kavsiri">
+                    <p>123-456-789</p>
+                    <p><a href="mailto:info@mysite.com">info@mysite.com</a></p>
+                </div>
+                <div class="footer-misamarti">
+                    <p>500 Terry Francine St </p>
+                    <p>San Francisco, CA 94158</p>
+
+                </div>
+            </div>
+            <div class="footer-marjvena">
+                <div class="gawevrianeba-seqcia">
+                    <h2>Join Our Mailing List</h2>
+                    <p class="gawevrianeba-agwera">Stay updated with our latest news and updates delivered straight to your inbox.</p>
+                    <form action="" class="gawevrianeba-forma">
+                        <label for="email">Email address *</label>
+                        <input type="email" id="email" placeholder="Enter your email" required>
+
+                        <div class="checkbox-jgufi">
+                            <input type="checkbox" id="marketing" required>
+                            <label for="marketing">Yes, I agree to receive marketing emails. *</label>
+                        </div>
+
+                        <button type="submit" class="submit-btn">Join Now</button>
+                    </form>
+                </div>
+                <div class="footer-qveda">
+                    <div class="social-icons">
+                      <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+        <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H7.5v-3H10V9.5C10 7.01 11.49 5.6 13.78 5.6c1.1 0 2.25.2 2.25.2v2.47h-1.27c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.45 3h-2.33v6.8c4.56-.93 8-4.96 8-9.8z"/>
+        </svg>
+      </a>
+
+      <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+        <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+        </svg>
+      </a>
+
+      <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+        <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 3 15.68 6.34 6.34 0 0 0 9.33 22a6.33 6.33 0 0 0 6.34-6.32V9.6a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-.85-.03z"/>
+        </svg>
+      </a>
+                    </div>
+<p class="marka">&copy;2035 by VISTA.IO. Powered and secured by <a href="#">Wix</a></p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+</body>
+</html>
